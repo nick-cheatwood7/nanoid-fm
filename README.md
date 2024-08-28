@@ -5,6 +5,9 @@ _Inspired by the following parent projects: [ai/nanoid](https://github.com/ai/na
 <img src="./logo.svg" align="right" alt="Nano ID logo by Anton Lovchikov" width="180" height="94">
 
 Atomic FileMaker custom functions used to generate `nanoid`s.
+<br />
+<br />
+<br />
 
 ## 👨‍💻 Usage
 
