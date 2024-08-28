@@ -1,0 +1,15 @@
+/*
+* @HISTORY
+* Created 08-28-2024 by Nick Cheatwood
+*
+* @PURPOSE
+* Generates a nanoid
+* 
+* @NOTES
+* See: https://github.com/ai/nanoid
+*
+* @USAGE
+* nanoid
+*/
+
+nanoid_simple ( 21 )

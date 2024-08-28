@@ -1,0 +1,57 @@
+/*
+* @HISTORY
+* Created 08-28-2024 by Nick Cheatwood
+*
+* @PURPOSE
+* Generates a nanoid using specified length and custom alphabet
+* 
+* @NOTES
+* See: https://github.com/ai/nanoid
+*
+* @PARAMETERS
+* id_length: the length of the nanoid to be generated
+* alphabet: the custom alphabet to use when generating the nanoid
+*
+* @USAGE
+* nanoid_custom( 21 ; "_-0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" )
+*/
+
+Let([
+
+/* Length of the ID */
+len = id_length;
+
+/* Custom alphabet */
+alphabet = alphabet;
+
+/* Length of the custom alphabet */
+charCount = Length ( alphabet );
+
+/* Generate fn */
+Generate = While (
+
+/* Init variables */
+[ i = 1 ; result = "" ]; 
+
+/* Iterator (execute while this statement is truthy) */
+i <= len; 
+
+[ 
+  /* Build nanoid using random character from alphabet */
+  result = result & Middle(alphabet; Int ( Random * charCount ) + 1 ; 1 ); 
+
+  /* Increment index */
+  i = i + 1 
+]; 
+
+/* Result */
+result 
+
+) /* End While() */
+
+];
+
+/* Generate nanoid */
+Generate
+
+)
